@@ -10,8 +10,8 @@
  	
     <package name="default" extends="struts-default" namespace="/">
         <action name="login" class="org.resume.action.LoginAction">
-            <result name="success">Welcome.jsp</result>
-            <result name="error">Login.jsp</result>
+            <result name="success">pages/welcome.jsp</result>
+            <result name="error">pages/login.jsp</result>
         </action>
     </package>
 </struts>
