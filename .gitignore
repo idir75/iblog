@@ -1,0 +1,11 @@
+.classpath
+.project
+
+*.class
+*.jar
+*.war
+*.ear
+
+.settings/
+build/
+WebContent/WEB-INF/lib
