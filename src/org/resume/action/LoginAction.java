@@ -7,6 +7,9 @@ public class LoginAction extends ActionSupport {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 * User.
+	 */
 	private String username;
     private String password;
  
