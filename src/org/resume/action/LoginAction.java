@@ -2,6 +2,10 @@ package org.resume.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+/**
+ * A class to handle login action.
+ * @author IDIR.
+ */
 public class LoginAction extends ActionSupport {
     /**
 	 * 
@@ -10,14 +14,14 @@ public class LoginAction extends ActionSupport {
 	/**
 	 * User.
 	 */
-	private String username;
+	private String fUsername;
 	/*
 	 * Password.
 	 */
-    private String password;
+    private String fPassword;
  
     public String execute() {
-        if (this.username.equals("test") && this.password.equals("test")) {
+        if (this.fUsername.equals("test") && this.fPassword.equals("test")) {
             return "success";
         } else {
             addActionError(getText("error.login"));
@@ -26,19 +30,19 @@ public class LoginAction extends ActionSupport {
     }
  
     public String getUsername() {
-        return username;
+        return fUsername;
     }
  
     public void setUsername(String username) {
-        this.username = username;
+        this.fUsername = username;
     }
  
     public String getPassword() {
-        return password;
+        return fPassword;
     }
  
     public void setPassword(String password) {
-        this.password = password;
+        this.fPassword = password;
     }
 }
 
