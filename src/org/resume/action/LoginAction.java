@@ -11,10 +11,12 @@ public class LoginAction extends ActionSupport {
 	 * User.
 	 */
 	private String username;
+	/*
+	 * Password.
+	 */
     private String password;
  
     public String execute() {
- 
         if (this.username.equals("test") && this.password.equals("test")) {
             return "success";
         } else {
